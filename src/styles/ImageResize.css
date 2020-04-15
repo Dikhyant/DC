@@ -1,7 +1,41 @@
-.img-5{
+@media (min-width: 10px){
+    .img-5{
+        width: 104%;
+    }
+}
+
+@media (min-width: 300px){
+    .img-5{
+        height: 180px;
+    }
+}
+
+@media (min-width: 400px){
+    .img-5{
+        height: 270px;
+    }
+}
+
+@media (min-width: 770px){
+    .img-5{
+        height: 400px;
+    }
+}
+@media (min-width: 990px){
+    .img-5{
+        height: 500px;
+    }
+}
+@media (min-width: 1200px){
+    .img-5{
+        height: 580px;
+    }
+}
+
+/* .img-5{
     width: 104%;
     height: 500px;
-}
+} */
 
 @keyframes hoverShadow{
     100% {
