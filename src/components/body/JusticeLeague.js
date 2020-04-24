@@ -2,21 +2,38 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import imageInfo from "./JusticeLeagueImages";
 
+import {LinkContainer} from "react-router-bootstrap";
+
 import "../../styles/textAlign.css";
 import "../../styles/ImageResize.css";
+
+class Demo extends React.Component{
+    render(){
+        // console.log(this.props.children);
+        return(
+            <div>
+                {this.props.children}
+            </div>
+        )
+    }
+}
 
 class JusticeLeague extends React.Component{
     render(){
         const imagesCards = imageInfo.map( image=>{
             return(
                 <div key={Math.random()} className="col-sm">
-                    <Card className="card-shadow">
-                        <a href={image.path}><Card.Img src={image.path} /></a>
-                        <Card.Body>
-                            <Card.Title>{image.title}</Card.Title>
-                            <Card.Text>{image.Info}</Card.Text>
-                        </Card.Body>
-                    </Card>
+                    <Demo>
+                    <LinkContainer to={"/heros/"+image.title}>
+                        <Card className="card-shadow img-card">
+                            <Card.Img src={image.path} />
+                            <Card.Body>
+                                <Card.Title>{image.title}</Card.Title>
+                                <Card.Text>{image.Info}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </LinkContainer>
+                    </Demo>
                 </div>
             )
         })

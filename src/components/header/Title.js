@@ -1,8 +1,7 @@
 import React from "react";
 import JumboTron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {LinkContainer} from "react-router-bootstrap"
+import DC_logo from "../../images/logo/DC_logo.png";
 
 class Title extends React.Component{
     render(){
@@ -12,9 +11,9 @@ class Title extends React.Component{
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col">
-                                <h1 className="display-1">
-                                    DC
-                                </h1>
+                                <div className="site-title-container">
+                                    <LinkContainer to="/" ><img src={DC_logo} className="site-title" alt="Img not found" /></LinkContainer>
+                                </div>
                                 <p>
                                     Detective Comics
                                 </p>

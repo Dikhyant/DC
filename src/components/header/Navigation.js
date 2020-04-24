@@ -5,18 +5,20 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import {LinkContainer} from "react-router-bootstrap";
+import DC_logo from "../../images/logo/DC_logo.png";
 
 class Navigation extends React.Component{
     render(){
         return(
             <div >
                 <Navbar expand="md">
-                    <Navbar.Brand href="#">DC</Navbar.Brand>
+                    <LinkContainer to="/" ><Navbar.Brand className="logo-container"><img className="site-logo" alt="Img not found" src={DC_logo} /></Navbar.Brand></LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
-                            <Nav.Link>Heros</Nav.Link>
-                            <Nav.Link>Villains</Nav.Link>
+                            <LinkContainer to="/heros"><Nav.Link>Heros</Nav.Link></LinkContainer>
+                            <LinkContainer to="/villains" ><Nav.Link>Villains</Nav.Link></LinkContainer>
                             <Nav.Link>Comics</Nav.Link>
                             <Nav.Link>Animations</Nav.Link>
                             <NavDropdown title="Live Action">

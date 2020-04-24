@@ -7,13 +7,13 @@ class Games extends React.Component{
     render(){
         const ImageCards = Images.map(images=>{
             return(
-                <div className="row">
+                <div className="row" key={Math.random()}>
                     <Card className="card-shadow">
                         <div className="row">
                             {
                                 images.shots.map( image=>{
                                     return(
-                                        <div className="col"><Card.Img src={image.path} /></div>
+                                        <div className="col" key={Math.random()}><Card.Img src={image.path} /></div>
                                     );
                                 })
                             }

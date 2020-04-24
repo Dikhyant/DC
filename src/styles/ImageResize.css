@@ -1,3 +1,34 @@
+/*----------- img-2 ----------*/
+@media (min-width: 10px){
+    .img-2{
+        width: 104%;
+    }
+}
+
+@media (min-width: 800px){
+    .img-2{
+        height: 335px;
+    }
+}
+
+/*---------- img-3 -----------*/
+
+@media (min-width: 770px){
+    .img-3{
+        width: 40%;
+        float: right;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 770px){
+    .img-3{
+        width: 95%;
+    }
+}
+
+/*------- img-5 -------------*/
+
 @media (min-width: 10px){
     .img-5{
         width: 104%;
@@ -32,10 +63,66 @@
     }
 }
 
+/*-------- img-5 -----------*/
+
 /* .img-5{
     width: 104%;
     height: 500px;
 } */
+
+/*--------- img-card ---------*/
+
+@media (min-width: 10px){
+    .img-card{
+        width: 104%;
+        height: 93%;
+    }
+}
+
+/*-------- img-card-3 ------------*/
+
+@media (min-width: 10px){
+    .img-card-3{
+        width: 104%;
+        height: 96%;
+    }
+}
+
+/*-------- site-logo ------*/
+
+@media (min-width: 10px){
+    .site-logo{
+        width: 100%;
+    }
+    
+    .logo-container{
+        width: 50px;
+    }
+}
+
+@media (min-width: 900px){
+
+    .logo-container{
+        width: 5%;
+    }
+}
+
+/*--------- site title ---------------*/
+
+@media (min-width: 10px){
+    .site-title{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 10%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .site-title-container{
+        width: 120px;
+    }
+}
+
+
 
 @keyframes hoverShadow{
     100% {

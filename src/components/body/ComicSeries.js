@@ -7,8 +7,8 @@ class ComicSeries extends React.Component{
     render(){
         const ImageCards = Images.map( image=>{
             return(
-                <div className="col-sm">
-                    <Card className="card-shadow">
+                <div className="col-sm" key={Math.random()}>
+                    <Card className="card-shadow img-card-3">
                         <Card.Img src={image.path} />
                         <Card.Body>
                             <Card.Title>{image.title}</Card.Title>
